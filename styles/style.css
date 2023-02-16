@@ -170,9 +170,103 @@ nav {
 .button-mid {
   text-align: center;
 }
+/* end */
+
+
+/* start  achivements */
+.facts-datils{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.facts-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.facts-description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.achievement-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-items: center;
+    
+}
+.achivements{
+    text-align: center;
+    padding: 40px 35px;
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+
+}
+.thumbnil img{
+    width: 45.22px;
+    height: 45.22px;
+
+}
+.achivement-number{
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+.achevment-description{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+/* end achivements */
+/* start Our Sponspors */
+.sponspors-details{
+    margin-top: 50px;
+    text-align: center;
+}
+.achivements-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.achivements-description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+
+/* start company-info */
+.company-info{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+/* end  */
+
+/* start footer */
+footer{
+    margin-top: 100px;
+    height: 100px;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
+.footer-description{
+    padding: 40px; 
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+}
+
+
+
 
 /* Responsive  */
-
+/* --------------------------------------------------------- */
 /* phone Devices */
 @media only screen and (max-width: 576px) {
   nav {
@@ -229,6 +323,16 @@ nav {
   .button-mid {
     text-align: center;
   }
+  .achievement-container{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .company-info{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    align-items: center;
+  }
 }
 
 /* tablet phone  */
@@ -249,5 +353,15 @@ nav {
   }
   .section-container {
     flex-direction: column;
+  }
+  .achievement-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .company-info{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
   }
 }
